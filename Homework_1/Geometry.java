@@ -57,11 +57,6 @@ public class Geometry extends Application {
             group.getChildren().add(line);
         }
 
-//        for (int i = 0; i < 20; i++) {//left
-//            Line line = new Line(partW, partH, partW, partH);
-//            group.getChildren().add(line);
-//        }
-
         // end TODO
         stage.setTitle("Canvas demo"); // Update Title as required
         stage.sizeToScene();
