@@ -32,11 +32,13 @@ public class Geometry extends Application {
     public void start(Stage stage) throws Exception {
         Group group = new Group();
         Scene scene = new Scene(group, 300, 250);
+        
         double width = scene.getWidth();
         double height = scene.getHeight();
         double radius = 1 / 3.0 * Math.min(width, height);
         double centerX = scene.getWidth() / 2;
         double centerY = scene.getHeight() / 2;
+        
         Circle circle = new Circle(centerX, centerY, radius);
         circle.setFill(Color.WHITE);
         circle.setStroke(Color.BLUE);
