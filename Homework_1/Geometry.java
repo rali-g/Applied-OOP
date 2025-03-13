@@ -29,30 +29,31 @@ public class Geometry extends Application {
         double partH = height / 20;
         double partW = width / 20;
 
+        Line line;
         for(int i = 0; i < 20; i++)
         {
-            Line line = new Line(0, i * partH, width - i * partW, 0);
+            line = new Line(0, i * partH, width - i * partW, 0);
             line.setStroke(Color.DARKORANGE);
             group.getChildren().add(line);
         }
 
         for(int i = 0; i < 20; i++)
         {
-            Line line = new Line(0, height - i * partH, width - i * partW, height);
+            line = new Line(0, height - i * partH, width - i * partW, height);
             line.setStroke(Color.DARKORANGE);
             group.getChildren().add(line);
         }
 
         for(int i = 0; i < 20; i++)
         {
-            Line line = new Line(width, height - i * partH, partW * i, height);
+            line = new Line(width, height - i * partH, partW * i, height);
             line.setStroke(Color.DARKORANGE);
             group.getChildren().add(line);
         }
 
         for(int i = 0; i < 20; i++)
         {
-            Line line = new Line(width, partH * i, partW * i, 0);
+            line = new Line(width, partH * i, partW * i, 0);
             line.setStroke(Color.DARKORANGE);
             group.getChildren().add(line);
         }
