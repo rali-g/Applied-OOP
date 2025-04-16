@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.GameController">
+   <children>
+      <GridPane alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="400.0" prefWidth="600.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="359.20001220703125" minWidth="10.0" prefWidth="313.5999755859375" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="309.1999877929688" minWidth="10.0" prefWidth="286.80002441406253" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="191.60001220703126" minHeight="10.0" prefHeight="91.60001220703126" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="313.9999755859375" minHeight="10.0" prefHeight="309.1999877929687" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" prefHeight="91.0" prefWidth="574.0" spacing="15.0" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS">
+               <children>
+                  <Button fx:id="btnDrawHand" minWidth="150.0" mnemonicParsing="false" onAction="#btnDrawHandOnClick" prefHeight="26.0" prefWidth="144.0" text="Изтегли ръка от карти">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnTwoCos" minWidth="115.0" mnemonicParsing="false" onAction="#btnTwoCosOnClick" text="Двойка козове">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnTwoCosKingQueen" minWidth="190.0" mnemonicParsing="false" onAction="#btnTwoCosKingQueenOnClick" text="Двойка козове KING/QUEEN">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnQuit" minWidth="50.0" mnemonicParsing="false" onAction="#btnQuitOnClick" text="Край">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+               </padding>
+            </HBox>
+            <GridPane prefHeight="295.0" prefWidth="537.0" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="257.00002136230466" minHeight="10.0" prefHeight="242.40000305175784" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="141.79999389648438" minHeight="10.0" prefHeight="53.599996948242165" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextArea fx:id="txaResult" editable="false" prefHeight="198.0" prefWidth="571.0" />
+                  <Label fx:id="lblScore" text="Точки:" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+               </children>
+            </GridPane>
+         </children>
+         <padding>
+            <Insets bottom="14.0" left="14.0" right="14.0" top="14.0" />
+         </padding>
+      </GridPane>
+   </children>
+</AnchorPane>
